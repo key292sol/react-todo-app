@@ -4,6 +4,8 @@ import { createStore } from "redux";
 import AddInput from "./components/AddInput";
 import TodoList from "./components/TodoList";
 
+import "./style.css";
+
 function reducer(state = { list: [] }, action) {
 	switch (action.type) {
 		case 'ADD_ITEM':

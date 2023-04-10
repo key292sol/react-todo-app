@@ -10,11 +10,12 @@ class TodoList extends Component {
 		}
 
 		return <div className="todo-list">
+			<h1>TASKS</h1>
 			{ this.props.list.map( (item, index) => {
 				return <div className="todo-item" key={index} >
 					<div className="id hidden">{ index }</div>
 					<p>{ item }</p>
-					<button onClick={delItem} > Delete </button>
+					<button className="del-button" onClick={delItem} > Delete </button>
 				</div>
 			} ) }
 		</div>

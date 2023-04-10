@@ -22,7 +22,7 @@ class AddInput extends Component {
 
 		return <div className="add-input">
 			<form onSubmit={addTodoItem} >
-				<input type="text" onChange={handleChange} text={this.state.text} />
+				<input type="text" onChange={handleChange} text={this.state.text} placeholder="Add new Task" />
 				<input type="submit" value="Add" />
 			</form>
 		</div>
